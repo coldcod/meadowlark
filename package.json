@@ -1,0 +1,15 @@
+{
+  "name": "meadowlark",
+  "version": "0.0.1",
+  "description": "initial node project for research purposes",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "coldcod <satwindersapra@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express3-handlebars": "^0.5.2"
+  }
+}
