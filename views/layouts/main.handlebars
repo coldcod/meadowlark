@@ -5,17 +5,21 @@
     .header {
       background-color: #e81c4f;
       position: fixed;
+      height: 8%;
       top: 0;
       left: 0;
       right: 0;
     }
     img {
-      width: 4%;
-      height: 4%;
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
     }
-    body {
+    .content {
+      top: 8%;
+      right: 0;
+      left: 0;
       position: fixed;
-      margin-top: 4%;
     }
   </style>
   {{#if showTests }}
@@ -30,7 +34,9 @@
       <center><img src="/img/jt.png" alt="Meadowlark Travel Logo" /></center>
     </div>
   </header>
-  {{{body}}}
+  <div class="content">
+    {{{body}}}
+  </div>
   {{#if showTests}}
   <div id="mocha"></div>
   <script src="/vendor/mocha.js"></script>
