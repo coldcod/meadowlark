@@ -1,0 +1,1 @@
+var mdtext = "#Home [md]";
