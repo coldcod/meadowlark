@@ -4,7 +4,8 @@
   "description": "initial node project for research purposes",
   "main": "meadowlark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node meadowlark.js"
   },
   "author": "coldcod <satwindersapra@gmail.com>",
   "license": "ISC",
