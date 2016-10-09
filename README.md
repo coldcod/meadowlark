@@ -1,5 +1,9 @@
 # meadowlark
 
-1. `npm install`
-2. `node meadowlark.js`
-3. visit [http://localhost:3000](http://localhost:3000)
+###Using bash, run:
+
+1. `git clone https://github.com/coldcod/meadowlark.git`
+2. `cd meadowlark && npm install`
+3. `npm start`
+
+Visit [http://localhost:3000](http://localhost:3000) on your browser.
