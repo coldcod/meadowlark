@@ -6,4 +6,6 @@
 2. `cd meadowlark && npm install`
 3. `npm start`
 
-Visit [http://localhost:3000](http://localhost:3000) on your browser.
+Visit __[http://localhost:3000](http://localhost:3000)__ on your browser.
+
+This whole app is hosted on __[heroku](https://meadowlark-cod.herokuapp.com/).__
