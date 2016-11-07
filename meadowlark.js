@@ -43,7 +43,16 @@ app.get('/tours/oregon-coast', function(req, res) {
 app.get('/tours/request-group-rate', function(req, res){
       	res.render('tours/request-group-rate');
 });
+/* header info */
+app.get('/headers', function(req, res){
+  res.set('Content-Type', 'text/plain');
+  var s = '';
+  for(var name in req.headers) s += name + ': ' + req.headers[name] + '\n';
+  res.send(s);
+})
 
+// disabling 'x-powered-by', a response header containing the name of the server being used
+app.disable('x-powered-by');
 
 /* custom 404 page */
 app.use(function(req, res){
@@ -60,7 +69,5 @@ app.use(function(err, req, res, next){
 
 /* starting server */
 app.listen(app.get('port'), function(){
-      	console.log( 'Express started on http://localhost:' + app.get('port') + ' at ' + time + '; press Ctrl-C to terminate.' );
+      	console.log( 'Express started on http://localhost:' + app.get('port') + ' at ' + time + '; press Ctrl-C to terminate' );
 });
-
-
