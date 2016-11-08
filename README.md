@@ -1,4 +1,4 @@
-# meadowlark
+# [meadowlark](https://meadowlark-cod.herokuapp.com/)
 
 ###Using bash, run:
 
@@ -7,5 +7,3 @@
 3. `npm start`
 
 Visit __[http://localhost:3000](http://localhost:3000)__ on your browser.
-
-This whole app is hosted on __[heroku](https://meadowlark-cod.herokuapp.com/).__
