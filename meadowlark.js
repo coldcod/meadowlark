@@ -8,6 +8,7 @@ var date = new Date();
 var currentDate = date.getDate() + '/' + (date.getMonth()+1) + '/' + date.getFullYear();
 var time = currentTime + ' on ' + currentDate;
 var bodyparser = require('body-parser');
+var http = require('http'), server = http.createServer(app);
 
 var urlencodedparser = bodyparser.urlencoded({ extended: false });
 
@@ -24,8 +25,9 @@ var handlebars = require('express3-handlebars').create({
 });
 
 app.engine('handlebars', handlebars.engine);
+app.set('host', '192.168.1.100')
 app.set('view engine', 'handlebars');
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 80);
 app.use(express.static(__dirname + '/public'));
 //app.use(bodyparser());
 app.use(function(req, res, next) {
@@ -99,6 +101,9 @@ app.use(function(err, req, res, next){
 
 
 /* starting server */
-app.listen(app.get('port'), function(){
+/*app.listen(app.get('port'), '192.168.1.100', function(){
       	console.log( 'Express started on http://localhost:' + app.get('port') + ' at ' + time + '; press Ctrl-C to terminate' );
-});
+});*/
+server.listen(app.get('port'), app.get('host'), function() {
+  console.log("running");
+})
