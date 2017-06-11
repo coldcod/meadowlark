@@ -2,8 +2,8 @@
 
 1. Using a terminal, run:
 
-  1. `git clone https://github.com/coldcod/meadowlark.git`
-  2. `cd meadowlark && npm install`
+  * `git clone https://github.com/coldcod/meadowlark.git`
+  * `cd meadowlark && npm install`
 
 2. Open `meadowlark.js` and modify the `app.set('host', 'meadowlark.local')` line to point to the hostname of your choice (usually `localhost`) by erasing `meadowlark.local` and providing a different host.
 
