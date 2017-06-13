@@ -25,7 +25,7 @@ var handlebars = require('express3-handlebars').create({
 });
 
 app.engine('handlebars', handlebars.engine);
-app.set('host', 'meadowlark.local')
+app.set('host', 'localhost')
 app.set('view engine', 'handlebars');
 app.set('port', process.env.PORT || 8080);
 app.use(express.static(__dirname + '/public'));
