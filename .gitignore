@@ -3,4 +3,3 @@ node_modules
 .DS_Store
 *.log
 public-key.txt
-public-key.pub
